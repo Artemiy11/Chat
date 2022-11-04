@@ -1,5 +1,7 @@
-import {sum} from './modules/sum';
 import "handlebars-helpers";
+const Handlebars = require("handlebars");
 
-const root = document.querySelector('#root');
-root.textContent = sum(6, -1).toString(); 
+document.addEventListener('DOMContentLoaded', () => {
+    const test = document.getElementById('test');
+    console.log(test);
+});
