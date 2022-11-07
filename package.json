@@ -1,9 +1,8 @@
 {
   "devDependencies": {
     "@anikin/parcel-transformer-handlebars": "^1.0.9",
+    "@anikin/parcel-transformer-handlebars-precompile": "^1.0.1",
     "parcel": "^2.7.0",
-    "parcel-transformer-handlebars": "^1.0.0",
-    "parcel-transformer-hbs": "^1.0.4",
     "path-browserify": "^1.0.1",
     "process": "^0.11.10",
     "punycode": "^2.1.1",
@@ -14,5 +13,9 @@
   "dependencies": {
     "handlebars": "^4.7.7",
     "handlebars-helpers": "^0.10.0"
+  },
+  "scripts": {
+    "dev": "parcel ./src/index.hbs --no-cache",
+    "build": "parcel build ./src/index.hbs --no-cache"
   }
 }

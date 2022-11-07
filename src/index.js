@@ -1,7 +1,10 @@
-import "handlebars-helpers";
-const Handlebars = require("handlebars");
+import Handlebars from "handlebars";
 
 document.addEventListener('DOMContentLoaded', () => {
-    const test = document.getElementById('test');
-    console.log(test);
+    "use strict"
+    let login = require('./pages/login/login'),
+        registration = require('./pages/registration/registration');
+
+    const app = document.querySelector('body');
+    app.innerHTML = registration.default;
 });

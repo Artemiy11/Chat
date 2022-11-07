@@ -1,0 +1,26 @@
+.main {
+  &__left {
+    width: 25%;
+    padding: 20px 10px 0 10px;
+  }
+  &__profile {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+    color: #999999;
+    text-decoration: none;
+  }
+  &__input {
+    input {
+      padding: 5px;
+      width: 290px;
+      height: 32px;
+      background: #efefef;
+      border-radius: 5px;
+      border: none;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
