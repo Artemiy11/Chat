@@ -5,6 +5,10 @@
   font-family: "Fira Sans Extra Condensed", sans-serif;
 }
 
+html {
+  overflow: hidden;
+}
+
 .login {
   position: relative;
   padding: 50px 30px 30px 30px;
@@ -80,9 +84,16 @@
   bottom: 30;
 }
 
+.main {
+  display: flex;
+}
 .main__left {
   width: 25%;
+  height: 100%;
   padding: 20px 10px 0 10px;
+  background-color: #fbfbfb;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 .main__profile {
   display: flex;
@@ -91,8 +102,16 @@
   color: #999999;
   text-decoration: none;
 }
+.main__input {
+  margin-top: 23;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
 .main__input input {
-  padding: 5px;
+  padding: 5px 10px;
   width: 290px;
   height: 32px;
   background: #efefef;
@@ -101,4 +120,113 @@
 }
 .main__input input:focus {
   outline: none;
+}
+.main__input-placeholder {
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+.main__input-placeholder span {
+  font-weight: 500;
+  font-size: 12px;
+  color: #999;
+}
+.main__input-img {
+  width: 15px;
+  margin-right: 4px;
+}
+.main__divider {
+  margin-top: 14;
+  margin-bottom: 12px;
+  height: 1px;
+  background-color: #EAEAEA;
+  border: none;
+}
+.main__chat {
+  display: flex;
+}
+.main__chat .picture {
+  width: 47px;
+  height: 47px;
+  background-color: #efefef;
+  border-radius: 100%;
+  margin-right: 15px;
+}
+.main__chat .left {
+  display: flex;
+}
+.main__chat .content {
+  display: flex;
+  flex-direction: column;
+}
+.main__chat .content .name {
+  font-weight: 600;
+  font-size: 13px;
+}
+.main__chat .content .message {
+  font-weight: 500;
+  font-size: 12px;
+  margin-top: 4px;
+  color: #999999;
+}
+.main__chat .others {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+}
+.main__chat .others .time {
+  font-weight: 500;
+  font-size: 9px;
+  color: #999999;
+}
+.main__chat .others .count_wrap {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #3369f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__chat .others .count {
+  color: #fff;
+  font-size: 11;
+}
+.main__right {
+  width: 75%;
+  padding: 10px 20px;
+}
+.main__top-wrapper {
+  display: flex;
+  align-items: center;
+}
+.main__person {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main__person .picture {
+  width: 34px;
+  height: 34px;
+  background-color: #efefef;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+.main__person span {
+  font-weight: 600;
+  font-size: 13px;
+}
+.main__options {
+  display: flex;
+  flex-direction: column;
+  height: 20;
+  justify-content: space-between;
+}
+.main__options div {
+  width: 4px;
+  height: 4px;
+  background-color: #000;
+  border-radius: 100%;
 }/*# sourceMappingURL=main.min.css.map */

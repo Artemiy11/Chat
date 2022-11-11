@@ -6,5 +6,9 @@
     font-family: 'Fira Sans Extra Condensed', sans-serif;
 }
 
+html {
+    overflow: hidden;
+}
+
 @import 'blocks/login';
 @import 'blocks/main';
